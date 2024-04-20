@@ -87,9 +87,9 @@ class ZeroconfService:
             It operates on a separate thread, used to update the list of peers 
             using a Zeroconf service browser every second.
         """
+        service_browser = ServiceBrowser(self.zeroconf, ["_closecircle._tcp.local."], handlers=[self.on_service_state_change])
 
         while True:
-            service_browser = ServiceBrowser(self.zeroconf, ["_closecircle._tcp.local."], handlers=[self.on_service_state_change])
             if not self.listening_for_services:
                 break
             time.sleep(1)
