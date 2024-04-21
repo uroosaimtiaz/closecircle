@@ -15,7 +15,7 @@ import (
 	"time"
 
 	"github.com/grandcat/zeroconf"
-	"go-client/internal/peer"
+	"go-client/internal/networking"
 )
 
 // DiscoverPeers searches for mDNS services and returns a slice of discovered peers.

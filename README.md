@@ -12,7 +12,6 @@
 │   │   ├── __init__.py
 │   │   ├── login.py
 │   │   ├── register.py
-│   │   └── test.py
 │   ├── chat
 │   │   ├── __init__.py
 │   │   ├── chat_ui.py

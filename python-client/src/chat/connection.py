@@ -7,7 +7,6 @@ import pyautogui
 
 from prompt_toolkit.shortcuts import button_dialog
 from prompt_toolkit.patch_stdout import patch_stdout
-from prompt_toolkit.layout import Justification
 
 from .chat_ui import ChatUI
 from .handshake import Handshake
@@ -92,7 +91,7 @@ class Connection:
         with patch_stdout():
             result = button_dialog(
                 title='Incoming Connection',
-                text=Justification.Center(f'You have an incoming connection request from {self.peer_name}, press yes to initiate handshake.'),
+                text=(f'You have an incoming connection request from {self.peer_name}, press yes to initiate handshake.'),
                 buttons=[
                     ('Yes', True),
                 ]

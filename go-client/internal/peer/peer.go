@@ -8,7 +8,7 @@ import (
 	"path"
 	"path/filepath"
 
-	"go-client/internal/peer"
+	"go-client/internal/networking"
 )
 
 type Peer struct {

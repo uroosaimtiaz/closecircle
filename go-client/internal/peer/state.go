@@ -2,7 +2,7 @@ package peer
 
 import (
 	"fmt"
-	"go-client/internal/peer"
+	"go-client/internal/networking"
 )
 
 type AppState struct {
