@@ -135,13 +135,6 @@ class Handshake:
         with the challenge response. It then waits for the peer's challenge response to verify
         the connection.
 
-        If there are padding or other errors decrypted and parsing the recieved data,
-        default values for the incoming receiver's public key and challenge response
-        are used, so the handshake can continue.
-
-        This is in case of a peer sending invalid data or if the data is tampered with,
-        or using an old, compromised password-derived key.
-
         """
         # Generate key pair
         private_key, public_key = Handshake.generate_ecdh_key_pair()
